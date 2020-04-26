@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		5237FD202455530C00627EF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5237FD1F2455530C00627EF4 /* AppDelegate.swift */; };
 		5237FD222455530C00627EF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5237FD212455530C00627EF4 /* SceneDelegate.swift */; };
-		5237FD242455530C00627EF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5237FD232455530C00627EF4 /* ViewController.swift */; };
-		5237FD272455530C00627EF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5237FD252455530C00627EF4 /* Main.storyboard */; };
 		5237FD292455530C00627EF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5237FD282455530C00627EF4 /* Assets.xcassets */; };
 		5237FD2C2455530C00627EF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5237FD2A2455530C00627EF4 /* LaunchScreen.storyboard */; };
 		5237FD372455530D00627EF4 /* TelstraAssessmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5237FD362455530D00627EF4 /* TelstraAssessmentTests.swift */; };
 		5237FD422455530D00627EF4 /* TelstraAssessmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5237FD412455530D00627EF4 /* TelstraAssessmentUITests.swift */; };
+		5265A503245568210057F147 /* AboutCanadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265A502245568210057F147 /* AboutCanadaViewController.swift */; };
+		5265A50A245569FB0057F147 /* InformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265A509245569FB0057F147 /* InformationCell.swift */; };
+		5265A50E24557C710057F147 /* CanadaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265A50D24557C710057F147 /* CanadaViewModel.swift */; };
+		5265A51024557E580057F147 /* InformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265A50F24557E580057F147 /* InformationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +40,6 @@
 		5237FD1C2455530C00627EF4 /* TelstraAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelstraAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5237FD1F2455530C00627EF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5237FD212455530C00627EF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5237FD232455530C00627EF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5237FD262455530C00627EF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5237FD282455530C00627EF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5237FD2B2455530C00627EF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5237FD2D2455530C00627EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +49,10 @@
 		5237FD3D2455530D00627EF4 /* TelstraAssessmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelstraAssessmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5237FD412455530D00627EF4 /* TelstraAssessmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelstraAssessmentUITests.swift; sourceTree = "<group>"; };
 		5237FD432455530D00627EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5265A502245568210057F147 /* AboutCanadaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCanadaViewController.swift; sourceTree = "<group>"; };
+		5265A509245569FB0057F147 /* InformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationCell.swift; sourceTree = "<group>"; };
+		5265A50D24557C710057F147 /* CanadaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaViewModel.swift; sourceTree = "<group>"; };
+		5265A50F24557E580057F147 /* InformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +103,9 @@
 		5237FD1E2455530C00627EF4 /* TelstraAssessment */ = {
 			isa = PBXGroup;
 			children = (
-				5237FD1F2455530C00627EF4 /* AppDelegate.swift */,
-				5237FD212455530C00627EF4 /* SceneDelegate.swift */,
-				5237FD232455530C00627EF4 /* ViewController.swift */,
-				5237FD252455530C00627EF4 /* Main.storyboard */,
-				5237FD282455530C00627EF4 /* Assets.xcassets */,
-				5237FD2A2455530C00627EF4 /* LaunchScreen.storyboard */,
 				5237FD2D2455530C00627EF4 /* Info.plist */,
+				5265A505245569860057F147 /* Launch */,
+				5265A504245569760057F147 /* Module */,
 			);
 			path = TelstraAssessment;
 			sourceTree = "<group>";
@@ -126,6 +126,52 @@
 				5237FD432455530D00627EF4 /* Info.plist */,
 			);
 			path = TelstraAssessmentUITests;
+			sourceTree = "<group>";
+		};
+		5265A504245569760057F147 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				5265A508245569C90057F147 /* Model */,
+				5265A507245569B80057F147 /* ViewModel */,
+				5265A506245569A00057F147 /* View */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		5265A505245569860057F147 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				5237FD1F2455530C00627EF4 /* AppDelegate.swift */,
+				5237FD212455530C00627EF4 /* SceneDelegate.swift */,
+				5237FD282455530C00627EF4 /* Assets.xcassets */,
+				5237FD2A2455530C00627EF4 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		5265A506245569A00057F147 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5265A502245568210057F147 /* AboutCanadaViewController.swift */,
+				5265A509245569FB0057F147 /* InformationCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5265A507245569B80057F147 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5265A50D24557C710057F147 /* CanadaViewModel.swift */,
+				5265A50F24557E580057F147 /* InformationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5265A508245569C90057F147 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +280,6 @@
 			files = (
 				5237FD2C2455530C00627EF4 /* LaunchScreen.storyboard in Resources */,
 				5237FD292455530C00627EF4 /* Assets.xcassets in Resources */,
-				5237FD272455530C00627EF4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +304,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5237FD242455530C00627EF4 /* ViewController.swift in Sources */,
 				5237FD202455530C00627EF4 /* AppDelegate.swift in Sources */,
 				5237FD222455530C00627EF4 /* SceneDelegate.swift in Sources */,
+				5265A50A245569FB0057F147 /* InformationCell.swift in Sources */,
+				5265A50E24557C710057F147 /* CanadaViewModel.swift in Sources */,
+				5265A503245568210057F147 /* AboutCanadaViewController.swift in Sources */,
+				5265A51024557E580057F147 /* InformationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +345,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5237FD252455530C00627EF4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5237FD262455530C00627EF4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5237FD2A2455530C00627EF4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
